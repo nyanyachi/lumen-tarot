@@ -58,9 +58,12 @@ elif page == "🌙 오늘의 타로":
 
     question = st.text_input("오늘의 고민이나 질문을 입력해보세요")
 
+    if not question:
+        st.warning("AI 해석을 위해 질문을 먼저 입력해주세요.")
+
     st.divider()
 
-    if st.button("🌙 카드 뽑기"):
+    if st.button("🌙 카드 뽑기", disabled=not question):
         selected_card = random.choice(cards)
 
         col1, col2, col3 = st.columns([1,2,1])
@@ -109,9 +112,12 @@ elif page == "🔮 3장 리딩":
 
     question = st.text_input("질문이나 고민을 입력해보세요")
 
+    if not question:
+        st.warning("AI 해석을 위해 질문을 먼저 입력해주세요.")
+
     st.divider()
 
-    if st.button("🔮 3장 뽑기"):
+    if st.button("🔮 3장 뽑기", disabled=not question):
         selected_cards = random.sample(cards, 3)
 
         positions = ["과거", "현재", "미래"]
