@@ -1,6 +1,10 @@
 import streamlit as st
 import random
 from cards import cards
+from ai_reader import generate_fake_ai
+from ai_reader import generate_three_card_reading
+
+
 
 st.sidebar.markdown("## 🔮 루멘 타로")
 
@@ -80,7 +84,15 @@ elif page == "🌙 오늘의 타로":
         st.write(selected_card["meaning"])
 
         if question:
-            st.success(f"'{question}'에 대한 오늘의 메시지입니다.")
+
+            ai_result = generate_fake_ai(
+                selected_card["name"],
+                question
+            )       
+
+        st.markdown("### ✨ 루멘의 AI 해석")
+
+        st.success(ai_result)
 
 elif page == "🔮 3장 리딩":
     st.markdown(
@@ -135,4 +147,14 @@ elif page == "🔮 3장 리딩":
                 st.write(card["meaning"])
 
         if question:
-            st.success(f"'{question}'에 대한 과거/현재/미래 리딩입니다.")
+                st.success(f"'{question}'에 대한 과거/현재/미래 리딩입니다.")
+
+                reading = generate_three_card_reading(
+                    [card["name"] for card in selected_cards],
+                    question
+                )
+
+                st.divider()
+
+                st.subheader("🔮 루멘의 AI 해석")
+                st.markdown(reading)
