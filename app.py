@@ -1,12 +1,18 @@
 import streamlit as st
 import random
+
 from cards import cards
-from ai_reader import generate_fake_ai
-from ai_reader import generate_three_card_reading
+from ai_reader import generate_fake_ai, generate_three_card_reading
 from memory_manager import add_reading, update_feedback
 
 if "feedback_message" not in st.session_state:
     st.session_state["feedback_message"] = None
+
+if "today_reading" not in st.session_state:
+    st.session_state["today_reading"] = None
+
+if "three_card_reading" not in st.session_state:
+    st.session_state["three_card_reading"] = None
 
 st.sidebar.markdown("## 🔮 루멘 타로")
 
@@ -47,10 +53,6 @@ if page == "🏠 홈":
     for col, image_path in zip(cols, display_items):
         with col:
             st.image(image_path, use_container_width=True)
-
-
-if "today_reading" not in st.session_state:
-    st.session_state["today_reading"] = None
 
 elif page == "🌙 오늘의 타로":
     st.markdown(
@@ -129,9 +131,6 @@ elif page == "🌙 오늘의 타로":
             if st.button("👎 별로였어요", key="dislike_today"):
                 update_feedback(record_id, "dislike")
                 st.warning("별로예요 피드백이 저장됐어요.")
-
-if "three_card_reading" not in st.session_state:
-    st.session_state["three_card_reading"] = None
 
 elif page == "🔮 3장 리딩":
     st.markdown(
