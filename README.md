@@ -26,7 +26,7 @@ This project began as a small AI app experiment and evolved into a lightweight e
 ### 🧠 Memory & Feedback System
 
 * Reading history saving
-* Session state 유지 시스템
+* Session state 
 * 👍 / 👎 feedback system
 * User reaction data structure
 
@@ -41,7 +41,7 @@ This project began as a small AI app experiment and evolved into a lightweight e
 
 ## 🌐 Live Demo
 
-👉 [Play Lumen Tarot Here](YOUR_DEPLOY_LINK_HERE)
+👉 [Play Lumen Tarot Here](https://lumen-tarot.streamlit.app/)
 
 ---
 
