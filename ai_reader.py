@@ -178,10 +178,6 @@ def generate_fake_ai(card_name, question):
     closing = random.choice(CLOSINGS)
 
     result = f"""
-루멘의 AI 해석
-
-질문: {question}
-뽑힌 카드: {card_name}
 
 {card_message}
 
@@ -203,8 +199,6 @@ def generate_three_card_reading(card_names, question):
     result_lines = [
         "### 루멘의 3장 AI 리딩",
         "",
-        f"**질문:** {question}",
-        "",
     ]
 
     for position, card_name in zip(positions, card_names):
@@ -215,7 +209,7 @@ def generate_three_card_reading(card_names, question):
         else:
             card_message = random.choice(card_messages)
 
-        result_lines.append(f"**[{position}] {card_name}**")
+        result_lines.append(f"**[{position}]**")
         result_lines.append(card_message)
         result_lines.append("")
 
