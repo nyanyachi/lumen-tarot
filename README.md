@@ -63,9 +63,20 @@ taroapp/
 ├── ai_reader.py
 ├── memory_manager.py
 ├── images/
-├── data/
 └── README.md
 ```
+
+---
+
+## 🌏 Language Support
+
+Currently available in:
+- 🇰🇷 Korean
+
+Planned future support:
+- 🇺🇸 English
+- 🇯🇵 Japanese
+- 🇨🇳 Chinese
 
 ---
 
