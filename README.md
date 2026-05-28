@@ -1,63 +1,95 @@
-# 루멘 타로
+# 🌙 Lumen Tarot
 
-루멘 타로는 Python과 Streamlit으로 만든 간단한 타로/오늘의 운세 웹앱입니다.
+Lumen Tarot is a mystical tarot reading web app built with Python and Streamlit.
 
-## 기능
+This project began as a small AI app experiment and evolved into a lightweight emotional tarot experience with custom interpretation systems, memory structures, and atmospheric UI design.
 
-- 오늘의 타로 1장 뽑기
-- 과거 / 현재 / 미래 3장 리딩
-- 메이저 아르카나 카드 사용
-- 카드 이미지와 해석 출력
+---
 
-## 실행 방법
+## ✨ Features
 
-```bash
-python -m streamlit run app.py
+### 🎴 Tarot Reading
 
-사용 기술
-Python
-Streamlit
+* Daily 1-Card Tarot Reading
+* Past / Present / Future 3-Card Reading
+* Major Arcana Tarot Deck
+* Randomized Card System
 
-# Lumen Tarot
+### 🤖 Lumen AI Interpretation System
 
-Lumen Tarot is a simple tarot and fortune web app built with Python and Streamlit.
+* Custom template-based AI interpretation system
+* Emotion and keyword-based reading flow
+* Multiple interpretation styles depending on question mood
+* Randomized advice generation
+* “Lumen-style” soft emotional responses
 
-## Features
+### 🧠 Memory & Feedback System
 
-- Daily Tarot Card Reading
-- Past / Present / Future 3-Card Reading
-- Major Arcana Tarot Deck
-- Tarot Card Images and Interpretations
-- Mystical Lumen Tarot Theme
+* Reading history saving
+* Session state 유지 시스템
+* 👍 / 👎 feedback system
+* User reaction data structure
 
-## Preview
+### 🎨 UI / Atmosphere
 
-A small fantasy-style tarot reading app with a dreamy purple moonlight atmosphere.
+* Dark purple mystical theme
+* Card-centered UI
+* Lumen Tarot branding
+* Fantasy / moonlight inspired atmosphere
 
-## Technologies Used
+---
 
-- Python
-- Streamlit
+## 🌐 Live Demo
 
-## How to Run
+👉 [Play Lumen Tarot Here](YOUR_DEPLOY_LINK_HERE)
 
-```bash
-python -m streamlit run app.py
+---
 
-Project Structure
+## 🛠 Technologies Used
 
+* Python
+* Streamlit
+* GitHub
+* Custom AI Template System
+
+---
+
+## 📂 Project Structure
+
+```text
 taroapp/
 ├── app.py
 ├── cards.py
+├── ai_reader.py
+├── memory_manager.py
 ├── images/
+├── data/
 └── README.md
+```
 
-Future Plans
+---
 
-AI-generated tarot interpretations
-Improved animations and UI effects
-More tarot card decks
-Online deployment
+## 🚀 Future Plans
 
-Author
+* Multi-language support
+* Improved animations and card effects
+* TTS voice narration
+* More tarot decks
+* Local AI integration
+* Mobile-friendly optimization
+
+---
+
+## 🌌 Project Goal
+
+Lumen Tarot is not designed as a hardcore prediction tool.
+
+Instead, it aims to become:
+
+> “A small emotional companion that softly reflects the user's current flow.”
+
+---
+
+## 👤 Author
+
 Created by Nyanyachi 🌙
