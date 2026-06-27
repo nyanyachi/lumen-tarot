@@ -1,0 +1,11 @@
+﻿{
+  "project_name": "Lumen Tarot",
+  "version": "1.0",
+  "status": "Maintenance",
+  "priority": "Low",
+  "progress": 100,
+  "current_goal": "Keep the stable release maintained with small content and interface improvements.",
+  "next_action": "Complete the highest-impact polish item from the maintenance list.",
+  "blockers": "No critical blocker; maintenance work is competing with higher-priority projects.",
+  "last_updated": "2026-06-27"
+}
